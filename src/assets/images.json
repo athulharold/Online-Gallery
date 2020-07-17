@@ -1,0 +1,27 @@
+[
+      {
+            "id": 1,
+            "name": "3 poeple.JPG",
+            "src": "/assets/images-file/3 poeple.JPG",
+            "desc": "This is an image of Athul, Hyzam and Sanoop during the all India trip"
+      },
+      {
+            "id": 2,
+            "name": "Agra Fort.JPG",
+            "src": "/assets/images-file/Agra Fort.JPG",
+            "desc": "This is an image of the Agra fort seen from the outside"
+      },
+            {
+            "id": 3,
+            "name": "Emil",
+            "src": "/assets/images-file/Emil.JPG",
+            "desc": "This is an image of the Agra fort seen from the outside"
+      },
+            {
+            "id": 4,
+            "name": "MC and Ashwin",
+            "src": "/assets/images-file/MC and Ashwin.JPG",
+            "desc": "This is an image of the Agra fort seen from the outside"
+      }
+
+]

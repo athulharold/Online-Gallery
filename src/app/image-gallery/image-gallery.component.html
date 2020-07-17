@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-2" *ngFor= "let i of images">
+			<figure class="figure">
+ 				 <img [src]="i.src" 
+ 				 class="figure-img img-fluid scaled" 
+ 				 alt="Image cannot be displayed"
+ 				 style="max-height: 80px;">
+ 				 <figcaption class="figure-caption text-left">{{i.desc}}</figcaption>
+			</figure>
+		</div>
+	</div>
+</div>
+
+<!-- <img [src]="i.src" 
+		alt="Image cannot be displayed"
+		class="img-responsive"
+		style="max-height: 80px;"> -->
