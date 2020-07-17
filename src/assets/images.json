@@ -3,25 +3,43 @@
             "id": 1,
             "name": "3 poeple.JPG",
             "src": "/assets/images-file/3 poeple.JPG",
-            "desc": "This is an image of Athul, Hyzam and Sanoop during the all India trip"
+            "desc": "Athul, Hyzam and Sanoop during the all India trip"
       },
       {
             "id": 2,
             "name": "Agra Fort.JPG",
             "src": "/assets/images-file/Agra Fort.JPG",
-            "desc": "This is an image of the Agra fort seen from the outside"
+            "desc": "The Agra Fort seen from outside"
       },
             {
             "id": 3,
             "name": "Emil",
             "src": "/assets/images-file/Emil.JPG",
-            "desc": "This is an image of the Agra fort seen from the outside"
+            "desc": "Emil inside the Agra Fort"
       },
             {
             "id": 4,
             "name": "MC and Ashwin",
             "src": "/assets/images-file/MC and Ashwin.JPG",
-            "desc": "This is an image of the Agra fort seen from the outside"
+            "desc": "Two friends of the 2016-20 CS batch of TKM during their all India tour"
+      },
+      {
+            "id": 5,
+            "name": "3 poeple.JPG",
+            "src": "/assets/images-file/MC.JPG",
+            "desc": "Three friends during the all India trip"
+      },
+      {
+            "id": 6,
+            "name": "3 poeple.JPG",
+            "src": "/assets/images-file/Sarah.JPG",
+            "desc": "Sarah, the daughter of the tour guide"
+      },
+      {
+            "id": 6,
+            "name": "3 poeple.JPG",
+            "src": "/assets/images-file/Sarah.JPG",
+            "desc": "Sarah, the daughter of the tour guide"
       }
 
 ]

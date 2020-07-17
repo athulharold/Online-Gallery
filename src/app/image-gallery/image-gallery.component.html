@@ -1,18 +1,23 @@
-<div class="container">
-	<div class="row">
-		<div class="col-xs-2" *ngFor= "let i of images">
+<div class="container imagediv">
+	<div class="row imagerow justify-content-around">
+		<div class="col-2 imagecol " *ngFor= "let i of images">
+			<div class="figurediv" >
 			<figure class="figure">
+				<a href="#">
  				 <img [src]="i.src" 
- 				 class="figure-img img-fluid scaled" 
+ 				 class="figure-img img-fluid"
  				 alt="Image cannot be displayed"
- 				 style="max-height: 80px;">
+ 				 style="height: auto; width: auto;
+ 				 object-fit: cover;">
+ 				</a>
+ 				<a href="#">
  				 <figcaption class="figure-caption text-left">{{i.desc}}</figcaption>
+ 				</a>
 			</figure>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!-- <img [src]="i.src" 
-		alt="Image cannot be displayed"
-		class="img-responsive"
-		style="max-height: 80px;"> -->
+<!-- class="figure-img img-fluid scaled" 
+style="height: 180px; max-width: 280px; max-width:200%" -->
