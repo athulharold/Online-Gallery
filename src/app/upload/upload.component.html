@@ -2,22 +2,29 @@
 <div class="container" style="margin-top: 10px">
 <h3>Upload Image</h3>
 
-<form action="http://localhost:5000/api/upload" enctype="multipart/form-data" method="POST" style="max-width: 500px">
+<form enctype="multipart/form-data" method="POST" style="max-width: 500px">
 
-    <input type="file" name="image" accept="image/*" />
+    <input type="file" (change)="fileChange($event)" name="image" accept="image/*" />
 
     <div class="form-group">
         <label for="imagetitle">Title</label>
-        <input type="text" name="title" class="form-control" id="imagetitle" >
+        <input type="text" name="title" class="form-control" id="imagetitle"  #title >
 
     </div>
 
     <div class="form-group">
         <label for="imagedesc">Image Description</label>
-        <textarea  name="desc" class="form-control" id="imagedesc" rows="3"></textarea>
+        <textarea  name="desc" class="form-control" id="imagedesc" rows="3" #desc></textarea>
     </div>
+<!-- 
+    <input type="submit" value="Upload Image"/> -->
+  <button type="button" class="btn-primary" (click)="upload($event,title,desc)"> Upload Image </button>
 
-    <input type="submit" value="Upload Image"/>
+
 </form>
 </div>
+
+
+
+
 

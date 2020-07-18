@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from './core/core.module'
-import { DescriptionModule } from "./description/description.module";
+
 import {RouterModule} from '@angular/router';
 import { UploadModule } from './upload/upload.module';
 import {ImageGalleryModule} from './image-gallery/image-gallery.module';
@@ -22,7 +22,7 @@ import { HeaderComponent } from './header/header.component';
     SharedModule,
     CoreModule,
     HttpClientModule,
-    DescriptionModule,
+
     UploadModule,
     RouterModule,
     ImageGalleryModule,
