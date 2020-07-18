@@ -12,6 +12,8 @@ import {RouterModule} from '@angular/router';
 export class ImageGalleryComponent implements OnInit {
 
   images: Iimage[];
+  clickedit=false;
+  clickedImage:Iimage;
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
@@ -19,8 +21,13 @@ export class ImageGalleryComponent implements OnInit {
   	console.log(this.images);
   }
 
-  clicked(){
-
+  clicked(image:Iimage){
+      this.clickedit=true;
+      this.clickedImage=image;
+  }
+  closeClick(){
+    this.clickedit=false;
+    this.clickedImage=null;
   }
 
 }

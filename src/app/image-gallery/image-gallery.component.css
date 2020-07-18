@@ -14,4 +14,20 @@
   box-shadow: 10px 10px 5px #888888;
   -webkit-box-shadow: 10px 50px 30px  #000000;
 }
- 
+.example-container {
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid #555;
+}
+// Change main active link appearance
+mdb-accordion-item-head.active a h5 {
+  color: red !important;
+  background-color: yellow !important;
+}
+
+// Change nested active links appearance
+mdb-accordion-item-body a.active {
+  color: red !important;
+  background-color: yellow !important;
+}

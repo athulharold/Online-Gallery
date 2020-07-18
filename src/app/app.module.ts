@@ -9,6 +9,7 @@ import { DescriptionModule } from "./description/description.module";
 import {RouterModule} from '@angular/router';
 import { UploadModule } from './upload/upload.module';
 import {ImageGalleryModule} from './image-gallery/image-gallery.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent
@@ -22,7 +23,8 @@ import {ImageGalleryModule} from './image-gallery/image-gallery.module';
     DescriptionModule,
     UploadModule,
     RouterModule,
-    ImageGalleryModule
+    ImageGalleryModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
