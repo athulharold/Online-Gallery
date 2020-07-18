@@ -5,15 +5,14 @@ import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 
 import { Iimage } from '../../app/shared/interfaces';
-
 @Injectable()
 export class DataService {
 
-    baseUrl: string = 'assets/';
+    baseUrl: string = 'http://localhost:5000/api/images';
     
     constructor(private http: HttpClient) { }
      getImages() : Observable<Iimage[]> {
-        return this.http.get<Iimage[]>(this.baseUrl + 'images.json')
+        return this.http.get<Iimage[]>(this.baseUrl)
             .pipe(
                 catchError(this.handleError)
             );

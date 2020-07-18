@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../core/data.service';
 import { Iimage } from '../shared/interfaces';
+import { HttpClient } from '@angular/common/http';
+import {RouterModule} from '@angular/router';
+
 @Component({
   selector: 'app-image-gallery',
   templateUrl: './image-gallery.component.html',
@@ -14,6 +17,10 @@ export class ImageGalleryComponent implements OnInit {
   ngOnInit(): void {
   	this.dataService.getImages().subscribe((image:Iimage[])=>this.images=image);
   	console.log(this.images);
+  }
+
+  clicked(){
+
   }
 
 }

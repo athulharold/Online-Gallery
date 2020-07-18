@@ -1,6 +1,5 @@
 export interface Iimage {
-    id: number;
-    name: string;
-    src: string;
+    title: string;
+    scr: string;
     desc: string;
 }

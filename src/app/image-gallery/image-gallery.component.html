@@ -1,22 +1,26 @@
-<div class="container imagediv">
-	<div class="row imagerow justify-content-around">
-		<div class="col-2 imagecol " *ngFor= "let i of images">
-			<div class="figurediv" >
+<div class="container">
+	<div class="row imagerow">
+		<div class="col-xs-6 col-md-2 imagecol " *ngFor= "let i of images">
+		  <div>
 			<figure class="figure">
-				<a href="#">
- 				 <img [src]="i.src" 
- 				 class="figure-img img-fluid"
+				<a href="#" (click)="clicked()">
+ 				 <img src="assets/Back-end/uploads/{{i.src}}" 
+ 				 class="figure-img img-fluid img-thumbnail mx-auto d-block"
  				 alt="Image cannot be displayed"
- 				 style="height: auto; width: auto;
- 				 object-fit: cover;">
+ 				 style="height: 200px; max-width: 200px;
+ 				   object-position: contain;">
  				</a>
  				<a href="#">
- 				 <figcaption class="figure-caption text-left">{{i.desc}}</figcaption>
+ 				 <figcaption class="figure-caption text-left">{{i.title}}</figcaption>
  				</a>
 			</figure>
 			</div>
 		</div>
 	</div>
+
+
+
+
 </div>
 
 <!-- class="figure-img img-fluid scaled" 

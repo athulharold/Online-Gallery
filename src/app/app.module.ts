@@ -4,19 +4,25 @@ import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
 import { CoreModule } from './core/core.module'
+import { DescriptionModule } from "./description/description.module";
+import {RouterModule} from '@angular/router';
+import { UploadModule } from './upload/upload.module';
+import {ImageGalleryModule} from './image-gallery/image-gallery.module';
 @NgModule({
   declarations: [
-    AppComponent,
-    ImageGalleryComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
     CoreModule,
-    HttpClientModule
+    HttpClientModule,
+    DescriptionModule,
+    UploadModule,
+    RouterModule,
+    ImageGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
