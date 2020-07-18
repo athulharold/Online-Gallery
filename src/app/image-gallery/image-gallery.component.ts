@@ -32,4 +32,3 @@ export class ImageGalleryComponent implements OnInit {
 
 }
 
-//DETAILS ABOUT THE IMAGE IS NOT LOADING
