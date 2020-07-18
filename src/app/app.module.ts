@@ -10,9 +10,11 @@ import {RouterModule} from '@angular/router';
 import { UploadModule } from './upload/upload.module';
 import {ImageGalleryModule} from './image-gallery/image-gallery.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

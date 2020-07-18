@@ -1,20 +1,20 @@
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+  <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
+	<span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+  </button>
+  <a routerLink="/" class="navbar-brand">Image Gallery</a>
+</div>
+<div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+		<ul class="nav navbar-nav">
+			<li><a [routerLink]="['/upload']" >Upload Image <span class="sr-only">(current)</span></a></li>
+			<li><a [routerLink]="['/gallery']" >Gallery</a></li>
+		</ul>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Image Gallery</a>
-<!--   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
-<!--    <span class="navbar-toggler-icon"></span> -->
-<!--   </button> -->
-
-  <div class="navbar" id="navbarSupportedContent"> <!-- collapse navbar-collapse -->
-    <ul class="navbar-nav "> <!-- mr-auto -->
-      <li class="nav-item active">
-        <a class="nav-link" href="#"> Upload Image <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/gallery']">Gallery</a>
-      </li>
-  
-    </ul>
-    
-  </div>
+	</div>
+	</div>
 </nav>
+
+
+<!-- <span class="sr-only">(current)</span> -->

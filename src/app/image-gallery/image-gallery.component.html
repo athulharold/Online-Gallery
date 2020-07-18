@@ -1,19 +1,10 @@
- <div class="container">
-	<div class="row">
-		<div class="col-12">
-			<button class="btn btn-primary float-right">
-				Upload Image
-			</button>
-		</div>
-	</div>
-</div>
 
-
-<!-- This div tag becomes active only when an image is clicked -->
 <div class="container">
 	<a (click)="closeClick()" *ngIf="clickedit">
 		<img src="assets/images-file/close.png" alt="Close Button">
 	</a>
+
+	<!-- This div tag becomes active only when an image is clicked -->
 	 <div class="row" *ngIf="clickedit">
 		<div class="container">
 			<div class="row" style="text-align: center;">
@@ -25,7 +16,7 @@
 			 				 <img src="assets/Back-end/uploads/{{clickedImage.src}}" 
 			 				 class="figure-img img-fluid img-thumbnail mx-auto d-block"
 			 				 alt="Image cannot be displayed"
-			 				 style="height: 400px; max-width: 600px;
+			 				 style="height: 500px; max-width: auto;
 			 				   object-position: contain;">
 			 				 <figcaption class="figure-caption text-left" 
 			 				 style="font-weight: bold; font-size:xx-large; text-align: center;">
@@ -50,11 +41,13 @@
 				  <div>
 					<figure class="figure">
 						<a (click)="clicked(i)">
+						<div>
 		 				 <img src="assets/Back-end/uploads/{{i.src}}" 
 		 				 class="figure-img img-fluid img-thumbnail mx-auto d-block"
 		 				 alt="Image cannot be displayed"
-		 				 style="height: 200px; max-width: 200px;
+		 				 style="height: 150px;  width: auto;
 		 				   object-position: contain;">
+		 				</div>	
 		 				</a>
 		 				<a (click)="clicked(i)">
 		 				 <figcaption class="figure-caption text-left">{{i.title}}</figcaption>
