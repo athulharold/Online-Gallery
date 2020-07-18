@@ -1,3 +1,6 @@
+// This is the service that fetches the data from the api and 
+// serves to the ImageGalleryComponent
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -17,38 +20,13 @@ export class DataService {
                 catchError(this.handleError)
             );
     }
-    
-//     getCompleteImage(id: number) : Observable<ICustomer> {
-//       return this.http.get<ICustomer[]>(this.baseUrl + 'customers.json')
-//         .pipe(
-//           map(customers => {
-//             let customer = customers.filter((cust: ICustomer) => cust.id === id);
-//             return (customer && customer.length) ? customer[0] : null;
-//           }),
-//           catchError(this.handleError)
-//         );
-//     }
-
-//     getOrders(id: number) : Observable<IOrder[]> {
-//       return this.http.get<IOrder[]>(this.baseUrl + 'orders.json')
-//         .pipe(
-//           map(orders => {
-//             let custOrders = orders.filter((order: IOrder) => order.customerId === id);
-//             return custOrders;
-//           }),
-//           catchError(this.handleError)
-//         );
-//     }
-
-
-
-    private handleError(error: any) {
-       console.error('server error:', error);
-       if (error.error instanceof Error) {
-          const errMessage = error.error.message;
-           return Observable.throw(errMessage);
+      private handleError(error: any) {
+         console.error('server error:', error);
+         if (error.error instanceof Error) {
+            const errMessage = error.error.message;
+             return Observable.throw(errMessage);
+         }
+         return throwError(error || 'Node.js server error');
        }
-       return throwError(error || 'Node.js server error');
-     }
 
  }

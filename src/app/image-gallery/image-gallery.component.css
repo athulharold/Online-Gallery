@@ -3,20 +3,7 @@
 	margin-right: 10px;
 }
 
-/*
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}*/
-
 .container a:hover{ 
   box-shadow: 10px 10px 5px #888888;
   -webkit-box-shadow: 10px 50px 30px  #000000;
-}
-.example-container {
-  width: 400px;
-  height: 200px;
-  margin: 10px;
-  border: 1px solid #555;
 }

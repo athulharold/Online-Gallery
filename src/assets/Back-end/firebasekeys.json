@@ -1,3 +1,5 @@
+//Stores the firebase keys of the database in which the image details are stored
+
 {
   "type": "service_account",
   "project_id": "online-gallery-menerva",

@@ -4,8 +4,6 @@ import {HttpClientModule} from '@angular/common/http';
 import { UploadRoutingModule } from './upload-routing.module';
 import { UploadComponent } from './upload.component';
 
-
-
 @NgModule({
   declarations: [UploadComponent,
   				 ],

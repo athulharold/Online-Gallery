@@ -6,13 +6,6 @@ import {SharedModule} from '../shared/shared.module';
 import {ImageGalleryComponent} from './image-gallery.component';
 import {RouterModule} from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule} from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import {MatListModule} from '@angular/material/list';
-import { MatButtonModule } from  '@angular/material/button';
-
 @NgModule({
   declarations: [ImageGalleryComponent],
   imports: [
@@ -21,14 +14,7 @@ import { MatButtonModule } from  '@angular/material/button';
     SharedModule,
     FormsModule,
     RouterModule,
-    HttpClientModule,
-    MatSidenavModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatListModule,
-    MatButtonModule
-
+    HttpClientModule
   ]
 })
 export class ImageGalleryModule { }

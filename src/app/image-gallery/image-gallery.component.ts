@@ -11,9 +11,9 @@ import {RouterModule} from '@angular/router';
 })
 export class ImageGalleryComponent implements OnInit {
 
-  images: Iimage[];
-  clickedit=false;
-  clickedImage:Iimage;
+  images: Iimage[];  //image array to recieve the details of stored images
+  clickedit=false;   //flag varible to see if an image is selected
+  clickedImage:Iimage; //Variable to store the image to be displayed when selected
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
@@ -27,7 +27,7 @@ export class ImageGalleryComponent implements OnInit {
   }
   closeClick(){
     this.clickedit=false;
-    this.clickedImage=null;
+
   }
 
 }
