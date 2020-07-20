@@ -6,7 +6,7 @@
 
 <form enctype="multipart/form-data" method="POST" style="max-width: 500px">
 
-    <input type="file" (change)="fileChange($event)" name="image" accept="image/*" />
+    <input type="file" (change)="fileChange($event)" name="image" multiple accept="image/*" />
 
     <div class="form-group">
         <label for="imagetitle">Title</label>
