@@ -20,27 +20,24 @@ export class UploadComponent implements OnInit {
 
     upload( $event, title, desc) {
         $event.preventDefault();
-        let formData = new FormData();
+       
         console.log("test");
         for (var i = 0; i < this.uploadedFiles.length; i++) {
+            let formData = new FormData();
             console.log(this.uploadedFiles[i].name);
             formData.append("image", this.uploadedFiles[i], this.uploadedFiles[i].name);
             formData.append("desc", desc.value);
             formData.append("title", title.value);
-
-        }
-        
-        this.http.post('http://localhost:5000/api/upload', formData)
+             this.http.post('http://localhost:5000/api/upload', formData)
             .subscribe((response) => {
                 alert("Uploaded");
                 console.log('response received is ', response);
             })
+
+        }
+        
+
     }
 
 
 }
-
-
-        // for (var i = 0; i < this.uploadedFiles.length; i++) {
-        //     formData.append("uploads[]", this.uploadedFiles[i], this.uploadedFiles[i].name);
-        // }
